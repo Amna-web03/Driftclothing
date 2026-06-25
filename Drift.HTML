@@ -1,0 +1,260 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Drift Clothing</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#000,#111,#1a1a1a);
+    color:white;
+    overflow-x:hidden;
+}
+
+/* Header */
+header{
+    text-align:center;
+    padding:80px 20px;
+    animation:fadeIn 2s ease;
+}
+
+header h1{
+    font-size:4rem;
+    letter-spacing:5px;
+    text-transform:uppercase;
+    color:#fff;
+}
+
+header p{
+    margin-top:15px;
+    color:#ccc;
+    font-size:1.1rem;
+}
+
+/* Navigation */
+nav{
+    background:#0d0d0d;
+    padding:15px;
+    text-align:center;
+    position:sticky;
+    top:0;
+    z-index:100;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:600;
+    transition:.4s;
+}
+
+nav a:hover{
+    color:#ff4d6d;
+}
+
+/* Hero */
+.hero{
+    text-align:center;
+    padding:100px 20px;
+}
+
+.hero h2{
+    font-size:3rem;
+    margin-bottom:20px;
+}
+
+.hero button{
+    padding:15px 35px;
+    border:none;
+    background:#ff4d6d;
+    color:white;
+    border-radius:30px;
+    cursor:pointer;
+    font-size:1rem;
+    transition:.4s;
+}
+
+.hero button:hover{
+    transform:scale(1.1);
+}
+
+/* About */
+.about{
+    padding:60px 10%;
+    text-align:center;
+}
+
+.about h2{
+    margin-bottom:20px;
+}
+
+.about p{
+    color:#ccc;
+    line-height:1.8;
+}
+
+/* Gallery */
+.gallery{
+    padding:60px 10%;
+}
+
+.gallery h2{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.image-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.image-grid img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+    border-radius:15px;
+    transition:.5s;
+    border:2px solid #222;
+}
+
+.image-grid img:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 20px #ff4d6d;
+}
+
+/* Products */
+.products{
+    padding:60px 10%;
+}
+
+.products ul{
+    margin-top:20px;
+    line-height:2;
+}
+
+/* Instagram */
+.instagram{
+    text-align:center;
+    padding:60px 20px;
+}
+
+.instagram a{
+    color:#ff4d6d;
+    text-decoration:none;
+    font-size:1.2rem;
+}
+
+/* Footer */
+footer{
+    background:#0d0d0d;
+    text-align:center;
+    padding:25px;
+    margin-top:40px;
+    color:#888;
+}
+
+/* Animation */
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+section{
+    animation:fadeIn 1.5s ease;
+}
+</style>
+</head>
+<body>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#about">About</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#products">Products</a>
+    <a href="#instagram">Instagram</a>
+</nav>
+
+<header>
+    <h1>DRIFT CLOTHING</h1>
+    <p>Premium Hoodies • Streetwear • Comfort Meets Style</p>
+</header>
+
+<section class="hero">
+    <h2>Wear The Drift.</h2>
+    <p>Luxury streetwear hoodies designed for modern fashion lovers.</p>
+    <br>
+    <button>Shop Now</button>
+</section>
+
+<section class="about" id="about">
+    <h2>About Drift Clothing</h2>
+    <p>
+        Drift Clothing is a premium hoodie and streetwear brand focused on
+        style, comfort, and individuality. Every hoodie is crafted with
+        quality materials and modern designs to help you stand out.
+    </p>
+</section>
+
+<section class="gallery" id="gallery">
+    <h2>Featured Hoodies</h2>
+
+    <div class="image-grid">
+        <img src="1.JFIF" alt="Hoodie 1">
+        <img src="2.JFIF" alt="Hoodie 2">
+        <img src="3.JFIF" alt="Hoodie 3">
+        <img src="4.JFIF" alt="Hoodie 4">
+        <img src="5.JFIF" alt="Hoodie 5">
+        <img src="6.JFIF" alt="Hoodie 6">
+        <img src="7.JFIF" alt="Hoodie 7">
+    </div>
+
+</section>
+
+<section class="products" id="products">
+    <h2>Why Choose Drift?</h2>
+
+    <ul>
+        <li>✔ Premium Quality Fabric</li>
+        <li>✔ Trendy Streetwear Designs</li>
+        <li>✔ Comfortable Oversized Fit</li>
+        <li>✔ Unique Limited Collections</li>
+        <li>✔ Perfect For Every Season</li>
+    </ul>
+</section>
+
+<section class="instagram" id="instagram">
+    <h2>Follow Us On Instagram</h2>
+    <br>
+    <a href="https://instagram.com/" target="_blank">
+        @driftclothing.nett
+    </a>
+</section>
+
+<footer>
+    <p>© 2026 Drift Clothing. All Rights Reserved.</p>
+    <p>Website Designed By Amna Abid ❣️</p>
+</footer>
+
+</body>
+</html>
